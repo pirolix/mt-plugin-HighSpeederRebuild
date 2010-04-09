@@ -23,7 +23,7 @@ PERLHEREDOC
 });
 MT->add_plugin ($plugin);
 
-#no warnings qw( redefine );
+no warnings qw( redefine );
 *MT::Entry::next = sub { undef; };
 *MT::Entry::previous = sub { undef; };
 
